@@ -1,0 +1,14 @@
+[versions]
+maia = "1.0.0-SNAPSHOT"
+
+[libraries]
+spigot = { group = "io.papermc.paper", name = "paper-api", version = "1.19.2-R0.1-SNAPSHOT" }
+velocity = { group = "com.velocitypowered", name = "velocity-api", version = "3.1.2-SNAPSHOT" }
+
+placeholderapi = { group = "me.clip", name = "placeholderapi", version = "2.11.2" }
+luckperms = { group = "net.luckperms", name = "api", version = "5.4" }
+
+inject = { group = "team.unnamed", name = "inject", version = "1.0.1" }
+
+maia-api = { group = "ml.stargirls", name = "maia-api", version.ref = "maia" }
+maia-paper = { group = "ml.stargirls", name = "maia-paper-api", version.ref = "maia" }

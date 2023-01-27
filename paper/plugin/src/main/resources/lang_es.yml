@@ -1,0 +1,161 @@
+commands:
+  usage: "<red>Uso correcto: <red><underlined><usage>"
+  invalid:
+    integer: "<red>Debes colocar un número entero"
+  number:
+    out-range: "<red>El número debe estar entre <argument:0> y <argument:1>"
+  argument:
+    no-more: "<red>¡No se encontraron más argumentos!"
+    not-self: "<red>¡No puedes usar este comando en ti mismo!"
+  command:
+    subcommand-invalid: "<red>¡El subcomando que intentas utilizar no existe!"
+    no-permission: "<red>¡No tienes suficientes permisos para ejecutar este comando!"
+    error: "<red>¡Ha ocurrido un error al ejecutar el comando, intenta de nuevo!"
+  sender:
+    unknown: "<red>¡Ha ocurrido un error al ejecutar el comando, intenta de nuevo!"
+    only-player: "<red>¡Este comando solo puede ser utilizado por jugadores!"
+  player:
+    unknown-or-offline: "<red>¡Ese nombre es inválido o el jugador se encuentra desconectado!"
+    unknown: "<red>¡Ese nombre es inválido, por favor introduce uno válido!"
+    offline: "<red>¡Este jugador está desconectado!"
+    self: "<red>¡No puedes usar este comando contigo mismo!"
+  unknown:
+    channel: "<red>¡El canal que intentas utilizar no existe!"
+    color: "<red>¡El color que intentas utilizar no existe!"
+
+join:
+  default: "<dark_gray>[<green>+<dark_gray>]<green><player>"
+
+leave:
+  default: "<dark_gray>[<red>-<dark_gray>]<red><player>"
+
+process-error: "<red>¡Ha ocurrido un error, intenta de nuevo! Si el problema persiste contacta con un administrador"
+bad-words: "<red>¡No puedes utilizar palabras malsonantes!"
+
+user:
+  cannot-self: "<red>¡No puedes hacer esto contigo mismo!"
+  join-cancelled: "<red>¡No puedes unirte al servidor en este momento!"
+  target-not-found: "<red>¡No se encontró ningún usuario con ese nombre!"
+  self-not-found: "<red>¡Ocurrió un error al obtener tu información, intenta de nuevo!"
+  load-failed: "<red>¡Ocurrió un error al cargar tu información! <newline><red>Ingresa de nuevo"
+  not-found: "<red>El usuario no se ha encontrado"
+
+property:
+  description:
+    messages: "<green>Recibir mensajes"
+    mentions: "<green>Recibir menciones"
+    social-spy: "<green>Espiar mensajes de otros jugadores"
+
+  toggle-true: "<green>¡Se ha activado la propiedad: <property>!"
+  toggle-false: "<red>¡Se ha desactivado la propiedad: <property>!"
+
+ignore:
+  cannot-ignore-self: "<red>¡No puedes ignorarte a ti mismo!"
+  already-ignored: "<red>¡Ya estás ignorando a esa persona!"
+  ignore-true: "<green>Has ignorado a <player>"
+  not-ignored: "<red>¡No estás ignorando a esa persona!"
+  ignore-false: "<red>Has dejado de ignorar a <player>"
+
+home:
+  no-homes: "<red>¡No tienes ninguna casa!"
+  no-home: "<red>¡No se encontró ninguna casa con ese nombre! <newline><red>Tus casas actuales son: <homes>"
+  not-found: "<red>¡No se encontró la casa, es posible que haya sido eliminada!"
+  not-shared: "<red>¡No puedes acceder a esa casa, la dueña ha dejado de compartirla configo!"
+  not-enabled: "<red>¡No puedes usar esta casa ya que se encuentra deshabilitada!"
+  invalid-name: "<red>¡El nombre de la casa es inválido!"
+  limit: "<red>¡Has alcanzado el límite de homes!"
+  set-success: "<green>¡Tu casa ha sido establecida! Te quedan <remaining> casa(s) disponible(s)"
+  deleted: "<green>¡La casa <home> <green>ha sido eliminada!"
+  remove-sharing:
+    not-shared: "<red>¡No estás compartiendo esa casa!"
+    success: "<green>¡Has dejado de compartir la casa <home><green>!"
+
+display:
+  color:
+    success: "<white>¡Se ha cambiado tu color de chat. <demo>"
+    demo: "Esto es un ejemplo de tu color de chat"
+    error: "<red>¡Ha ocurrido un error al cambiar el color del chat!"
+
+  name:
+    only-change-decoration: "<red>¡Solo puedes cambiar la decoración de tu nombre!"
+    bad-word: "<red>¡El nombre que intentas utilizar contiene palabras prohibidas!"
+    too-long: "<red>¡El nombre que intentas utilizar es demasiado largo!"
+    too-short: "<red>¡El nombre que intentas utilizar es demasiado corto!"
+    invalid: "<red>¡El nombre que intentas utilizar es inválido, no puedes usar simbolos!"
+    success: "<green>¡Tu nombre de usuario ha sido cambiado a <name><green>!"
+    error: "<red>¡Ha ocurrido un error al cambiar tu nombre!"
+
+chat:
+  error: "<red>¡Ha ocurrido un error al enviar el mensaje, intenta de nuevo!"
+  channel:
+    join-failed: "<red>¡Ocurrió un error al unirse al canal!"
+    join-success: "<green>¡Tu canal de chat ha sido cambiado a <channel>!"
+    exit-failed: "<red>¡Ocurrió un error al salir del canal de chat!"
+    exit-success: "<green>¡Has salido del canal de chat!"
+    already-in: "<red>¡Ya estás en ese canal de chat!"
+    not-in: "<red>¡No estás en ningún canal!"
+
+    global:
+      name: "<white>Global"
+      format: "<light_purple><player><gray>: <message>"
+
+    staff:
+      name: "<light_purple>Staff"
+      format: "<dark_purple>[<light_purple>Staff<dark_purple>] <light_purple><player> <gray>>> <message>"
+  bad-word: "<red>¡No puedes enviar mensajes con palabras malsonantes!"
+  mention: "<white>¡La jugadora <player> te ha <light_purple>mencionado<white>!"
+
+teleport:
+  error: "<red>¡Ha ocurrido un error al teletransportarte, intenta de nuevo!"
+  not-teleported: "<red>¡No pudimos teletransportarte, es probable que sea un lugar inseguro!"
+  error-parsing-location: "<red>¡El mundo al que intentas ir ya no existe, contacta con un administrador!"
+
+  delay: "<green>¡Te teletransportaremos en <white><delay> <green>segundos!"
+  move-cancelled: "<red>¡No puedes moverte mientras te teletransportas!"
+  player-not-found: "<red>¡El jugador al que te quieres teletransportar ya no se encuentra en línea!"
+
+  location-success: "<white>¡Has sido teletransportado correctamente a la ubicación!"
+  player-success: "<white>¡Has sido teletransportado correctamente a <player>!"
+
+message:
+  error: "<red>¡Ha ocurrido un error al enviar el mensaje!"
+  self: "<red>¡No puedes enviarte mensajes a ti mismo!"
+  bad-word: "<red>¡No puedes enviar mensajes con palabras malsonantes!"
+
+  toggle-messages-true: "<green>Has activado los mensajes privados"
+  toggle-messages-false: "<red>Has desactivado los mensajes privados"
+  toggle-social-spy-true: "<green>Has activado el modo espía"
+  toggle-social-spy-false: "<red>Has desactivado el modo espía"
+
+  self-not-receiving: "<red>¡Tienes los mensajes deshabilitados!"
+  self-ignoring-target: "<red>¡Estás ignorando a <player> no puedes enviarle mensajes!"
+
+  target-not-receiving: "<red>¡Ese usuario no acepta mensajes!"
+  target-ignoring-sender: "<red>¡Ese usuario te ha bloqueado!"
+
+  social-spy-format: "<gold>[SOCIAL-SPY] <sender> <white>-> <target> <yellow>» <white><message>"
+  target-format: "<sender> <green> -> Tu <gray>» <green><message>"
+  sender-format: "<green>Yo -> <target> <green>» <white><message>"
+
+  no-recent-message: "<red>No has recibidos mensajes recientemente, no puedes responder a nadie."
+  reply-offline: "<red>El usuario al que intentas responder está desconectado."
+
+server:
+  change-denied: "<red>Ocurrió un error al cambiar de servidor. Intenta de nuevo, si este problema continua contacta con un administrador."
+
+warp:
+  not-found: "<red>¡No se encontró ningún warp con ese nombre!"
+  already-exists: "<red>¡Ya existe un warp con ese nombre!"
+  find-error: "<red>¡Ocurrió un error al buscar el warp!"
+  error: "<red>¡Ocurrió un error al crear el warp!"
+
+  restricted: "<red>¡No tienes permiso para usar este warp!"
+  restricted-true: "<green>¡El warp <warp> <green>ahora es privado!"
+  restricted-false: "<green>¡El warp <warp> <green>ahora es público!"
+
+  listed-true: "<green>¡El warp <warp> <green>ahora es visible!"
+  listed-false: "<green>¡El warp <warp> <green>ahora es invisible!"
+
+  created: "<green>¡El warp <warp> ha sido creado correctamente!"
+  deleted: "<green>¡El warp <warp> ha sido eliminado correctamente!"
+  renamed: "<green>¡El warp <warp> ha sido renombrado a <name> correctamente!"
